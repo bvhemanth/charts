@@ -1,0 +1,43 @@
+
+
+<section>
+  <div class="row">
+    <div class="col-sm-8">
+      <router-outlet></router-outlet>
+    </div>
+    <div class="col-sm-4">
+      <ul>
+        <li>
+          <a [routerLink]="['./orders']">
+            Orders (by ngprime)
+          </a>
+        </li>
+        <li>
+          <a [routerLink]="['./existing']">
+            Existing Customers (by ngprime)
+          </a>
+        </li>
+        <li>
+          <a [routerLink]="['./newcust']">
+            New Customers (by ngprime)
+          </a>
+        </li>
+        <li>
+          <a [routerLink]="['./orderdeliver']">
+            Orders Delivered (by ngprime)
+          </a>
+        </li>
+        <li>
+          <a [routerLink]="['./ordernot']">
+            Order Not delivered (by d3)
+          </a>
+        </li>
+        <li>
+          <a [routerLink]="['./ordercancel']">
+            Orders cancelled by customer (by d3)
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
